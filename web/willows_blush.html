@@ -33,71 +33,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header-->
-<div class="header">
-	<div class="header-top">
-		<div class="container">
-			<div class="social">
-				<ul>
-					<li><a href="#"><i class="facebok"> </i></a></li>
-					<li><a href="#"><i class="twiter"> </i></a></li>
-					<li><a href="#"><i class="inst"> </i></a></li>
-					<li><a href="#"><i class="goog"> </i></a></li>
-						<div class="clearfix"></div>
-				</ul>
-			</div>
-			<div class="header-left">
-
-				<div class="search-box">
-					<div id="sb-search" class="sb-search">
-						<form action="#" method="post">
-							<input class="sb-search-input" placeholder="Enter your search term..." type="search"  id="search">
-							<input class="sb-search-submit" type="submit" value="">
-							<span class="sb-icon-search"> </span>
-						</form>
-					</div>
-				</div>
-
-<!-- search-scripts -->
-					<script src="js/classie.js"></script>
-					<script src="js/uisearch.js"></script>
-						<script>
-							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-					<!-- //search-scripts -->
-
-				<div class="ca-r">
-					<!-- <div class="cart box_1">
-						<a href="checkout.html">
-						<h3> <div class="total">
-							<span class="simpleCart_total"></span> </div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-
-					</div>-->
-				</div>
-					<div class="clearfix"> </div>
-			</div>
-
-		</div>
-		</div>
-		<div class="container">
-			<div class="head-top">
-				<div class="logo">
-					<h1><a href="index.html">Style Quilts</a></h1>
-				</div>
-		  <div class=" h_menu4">
-				<ul class="memenu skyblue">
-					<li><a class="color6" href="aboutus.html">About Us</a></li>
-					<li><a class="color6" href="contact.html">Contact</a></li>
-				<div class="clearfix"> </div>
-			  </ul>
-			</div>
-
-				<div class="clearfix"> </div>
-		</div>
-		</div>
-	</div>
+<div w3-include-html="social-and-header-menu-bar.html"></div>
+<script>
+w3.includeHTML();
+</script>
 	<!-- grow -->
 	<div class="grow">
 		<div class="container">
@@ -161,7 +100,7 @@ $(window).load(function() {
 					</div>
 					<div class="col-md-5 single-top-in simpleCart_shelfItem">
 						<div class="single-para ">
-						<h4>Willows Blush</h4>
+						<h2>Willows Blush</h2>
 							<!-- <div class="star-on">
 
 								<div class="review">
@@ -177,8 +116,8 @@ $(window).load(function() {
 								<br/>
 								<br/>
 
-								<h5><b>Product Features</b></h5>
-								<br/>
+								<h4>Product Features</h4><br/>
+
 								<ul>
 								<li>
 									100 Percent Cotton, floral, contemporary, prewashed,preshrunk,machine wash
@@ -225,55 +164,20 @@ $(window).load(function() {
 					</div>
 				<div class="clearfix"> </div>
 				</div>
-			<!---->
+			<!--bottom promotion products-->
 
-		<div class=" bottom-product">
-					<div class="col-md-4 bottom-cd simpleCart_shelfItem">
-						<div class="product-at ">
-							<a href="#"><img class="img-responsive" src="images/pi3.jpg" alt="">
-							<div class="pro-grid">
-										<span class="buy-in">Buy Now</span>
-							</div>
-						</a>
-						</div>
-						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
-						<div class="ca-rt">
-							<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-						</div>
-					</div>
-					<div class="col-md-4 bottom-cd simpleCart_shelfItem">
-						<div class="product-at ">
-							<a href="#"><img class="img-responsive" src="images/pi1.jpg" alt="">
-							<div class="pro-grid">
-										<span class="buy-in">Buy Now</span>
-							</div>
-						</a>
-						</div>
-						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
-						<div class="ca-rt">
-							<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-						</div>					</div>
-					<div class="col-md-4 bottom-cd simpleCart_shelfItem">
-						<div class="product-at ">
-							<a href="#"><img class="img-responsive" src="images/pi4.jpg" alt="">
-							<div class="pro-grid">
-										<span class="buy-in">Buy Now</span>
-							</div>
-						</a>
-						</div>
-						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
-						<div class="ca-rt">
-							<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-						</div>					</div>
-					<div class="clearfix"> </div>
-				</div>
+			<div w3-include-html="bottom-promo-products.html"></div>
+			<script>
+			w3.includeHTML();
+			</script>
+
 		</div>
 
 		<div class="clearfix"> </div>
 		</div>
 		</div>
-<!--//content-->
-<div w3-include-html="../web/footer-menu.html"></div>
+<!--//content footer menu-->
+<div w3-include-html="footer-menu.html"></div>
 <script>
 w3.includeHTML();
 </script>
