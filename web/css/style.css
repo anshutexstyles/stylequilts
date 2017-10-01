@@ -368,9 +368,9 @@ height: 35px;
   right: 0;
  }
 .banner-text{
- padding:14em 0 1em;
- color:#fff;
-   width: 50%;
+ padding:10.9em 1em 1em;
+ color:#000;
+ width: 50%;
 }
 /*-- agileits --*/
 .banner-text h3 {
@@ -383,7 +383,7 @@ height: 35px;
 }
 .banner-text p{
 	font-size:1.2em;
-	margin: 1.3em 0 1em;
+	margin: 0.1em 0 1em;
 }
 .banner-text a{
 	text-decoration: none;
