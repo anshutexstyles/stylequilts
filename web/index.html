@@ -17,6 +17,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	  gtag('config', 'UA-107335943-1');
 	</script>
 
+	<script>
+			/**
+			* Function that tracks a click on an outbound link in Analytics.
+			* This function takes a valid URL string as an argument, and uses that URL string
+			* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+			* using 'navigator.sendBeacon' in browser that support it.
+			*/
+			var trackOutboundLink = function(url) {
+			  gtag('event', 'click', {
+			    'event_category': 'outbound',
+			    'event_label': url,
+			    'transport_type': 'beacon',
+			    'event_callback': function(){document.location = url;}
+			  });
+			}
+	</script>
+
 <title>Quilts: Free Shipping on all the orders | Exclusive quilts at low prices | Quilts made with 100% cotton fabric for sale | Midvale, UT</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
